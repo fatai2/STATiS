@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Selection Tool for Appropriate Tests in Statistics (STATiS) — A Statistical Analysis Decision Aid</title>
+    <script type="text/javascript" async="" src="analytics.js"></script>
+    <script async="" src="gtm.js"></script>
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5MRHB7J');
+    </script>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="description" content="This aid allows you choose an appropriate statistical test to perform your data analysis.">
+    <meta name="keywords" content="data, analysis, decision, statistics, inference">
+    <meta name="application-name" content="STATiS — Selection Tool for Appropriate Tests in Statistics">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="">
+    <script src="common.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="froala_style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="froala_override.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="content.css">
+    <link rel="stylesheet" type="text/css" media="print" href="print.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="default_layout1.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="uw-theme-kb-v4.css">
+    <style type="text/css">
+        #top-links, #top-links-int {
+        
+            background-color: #6385B1;
+        
+        }
+           
+        #group-logo img {
+        
+            width: 0px;
+            height: px;
+            margin: 0;
+        
+        }
+        
+        
+        #search-form .search {
+        
+            background: #6385B1;   
+        
+        }
+        
+        #group-logo .group-name-hide {
+        
+            color: #6385B1;
+            
+        
+        }
+        
+        div.code {
+            display: inline-block;
+            background: #f1f1f1;
+            margin: 1em;
+            padding: .5em 1em;
+        }
+        
+        img.fr-bordered {
+            border: 1px solid #ccc;
+        }
+        
+        #copyright {
+        
+            border-top: 5px solid #6385B1;
+            font-weight: bold;
+           
+        }
+        
+        .kbleftlinks, .kbrightlinks, #qcats {
+        
+          
+            border-bottom: 4px solid #6385B1;
+        
+        
+        }
+        
+        .kbleftlinks a::after, .kbrightlinks a::after {
+        
+           
+            background-image: url('');
+            
+        
+        }
+        
+        .feedback-btn-link[href*='help=listener'] {
+        
+        display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="skip-nav"><a href="#maincontent">Skip navigation</a></div>
+    <div id="body-container">
+        <div id="container">
+            <div id="middle-sect2">
+                <div class="section group middle-sect2">
+                    <div class="col span_middle2_2_of_2">
+                        <main id="maincontent" role="main">
+                            <div id="page-content" role="article">
+                                <div class="fr-element fr-view">
+                                    <h1 class="title">Selection Tool for Appropriate Tests in Statistics (STATiS)</h1>
+                                    <div style="float:right;text-align:right;background-color:#F6F4F0;padding:1px;border:0px solid #e5e5e5;border-radius:2px;"></div>
+                                    <div id="doc-summary">
+                                        <p>This interface will assist you to choose the appropriate test for your statistical analysis using the information you provide by clicking the options below.</p>
+                                    </div>
+                                    <div id="tree-container">
+                                        <div id="q-container">
+                                            <ul id="tree">
+                                                <li>What type of analysis to you want to perform?</li>
+                                                <li><input name="lvl1" type="radio">I want to measure <strong>associations between variables</strong> 
+                                                    <ul>
+                                                        <li>What type of association do you want to perform?</li>
+                                                        <li><input name="lvl2" type="radio">I want to measure the <strong>association between scores derived from two or more raters/instruments — agreement</strong>
+                                                            <ul>
+                                                                <li>What is the level of measurement for these scores?</li>
+                                                                <li><input name="lvl3" type="radio">The scores are <strong>nominal</strong> <!-- explain nominal -->
+                                                                    <ul>
+                                                                        <li class="answer">
+                                                                            <p>The test you need is <strong>Kappa</strong></p>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li><input name="lvl3" type="radio">The scores are <strong>ordinal</strong> <!-- explain ordinal -->
+                                                                    <ul>
+                                                                        <li>How many raters/instruments were used to derive the scores? </li>
+                                                                        <li><input name="lvl4" type="radio">Scores were measured by <strong>only 2 raters/instruments</strong>
+                                                                            <ul>
+                                                                                <li class="answer">
+                                                                                    <p>The test you need is <strong>Kendall's tau</strong></p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li><input name="lvl4" type="radio">Scores were measured by <strong> 3 or more raters</strong> <!-- explain nominal -->
+                                                                            <ul>
+                                                                                <li class="answer">
+                                                                                    <p>The test you need is <strong>Kendall's W</strong></p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li><input name="lvl3" type="radio">The scores are <strong>interval</strong> <!-- explain interval -->
+                                                                    <ul>
+                                                                        <li>Are the variables normally distributed? </li>
+                                                                        <li><input name="lvl4" type="radio"><strong>Yes, they meet criteria for parametric analysis </strong> <!-- explain parametric -->
+                                                                            <ul>
+                                                                                <li class="answer">
+                                                                                    <p>The test you need is <strong>Pearson's r</strong></p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li><input name="lvl4" type="radio"><strong> No, they do not meet criteria for parametric analysis </strong> <!-- explain nonparametric -->
+                                                                            <ul>
+                                                                                <li class="answer">
+                                                                                    <p>The test you need is <strong>Spearman's rho </strong></p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><input name="lvl2" type="radio">I want to measure the <strong>relationship between two variables — Correlation</strong> 
+                                                            <ul>
+                                                                <li>What is the level of measurement for the base variable? </li>
+                                                                <li><input name="lvl3" type="radio">The base variable is <strong>nominal</strong> <!-- explain nominal -->
+                                                                    <ul>
+                                                                        <li>What is the level of measurement of the second variable? </li>
+                                                                        <li><input name="lvl4" type="radio">The second variable is <strong>nominal </strong> <!-- explain nominal -->
+                                                                            <ul>
+                                                                                <li>How many levels does the second variable have? </li>
+                                                                                <li><input name="lvl5" type="radio">The second variable has <strong> 2 levels (binary)</strong> <!-- explain nominal -->
+                                                                                    <ul>
+                                                                                        <li class="answer">                                                              
+                                                                                            <p>The test you need is <strong>Phi</strong></p>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                                <li><input name="lvl5" type="radio">The second variable has <strong>3 or more levels</strong>
+                                                                                    <ul>
+                                                                                        <li class="answer">
+                                                                                            <p>The test you need is <strong>Chi-square</strong></p>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </li>                                                      
+                                                                            </ul>                                                                            
+                                                                        </li>
+                                                                        <li><input name="lvl4" type="radio">The second variable is <strong>ordinal </strong> <!-- explain ordinal -->
+                                                                            <ul>
+                                                                                <li class="answer">
+                                                                                    <p>The test you need is <strong>Rank Biserial</strong></p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li><input name="lvl4" type="radio">The second variable is <strong>interval </strong> <!-- explain interval -->
+                                                                            <ul>
+                                                                                <li class="answer">
+                                                                                    <p>The test you need is <strong>Point Biserial</strong></p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li><input name="lvl3" type="radio">The base variable is <strong>ordinal</strong> <!-- explain ordinal -->
+                                                                    <ul>
+                                                                        <li class="answer">
+                                                                            <p>The test you need is <strong>Spearman's rho </strong></p>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li><input name="lvl3" type="radio">The base variable is <strong>interval</strong> <!-- explain interval -->
+                                                                    <ul>
+                                                                        <li>Are the variables normally distributed? </li>
+                                                                        <li><input name="lvl4" type="radio"><strong>Yes, the variables meet criteria for parametric analysis </strong> <!-- explain parametric -->
+                                                                            <ul>
+                                                                                <li class="answer">
+                                                                                    <p>The test you need is <strong>Pearson's r</strong></p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li><input name="lvl4" type="radio"><strong> No, the variables do not meet criteria for parametric analysis </strong> <!-- explain nonparametric -->
+                                                                            <ul>
+                                                                                <li class="answer">
+                                                                                    <p>The test you need is <strong>Spearman's rho </strong></p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><input name="lvl2" type="radio">I want to measure the <strong>relationship between predictor and outcome variables⁠ —  Regression</strong> 
+                                                            <ul>
+                                                                <li>What is the level of measurement for the outcome variable? </li>
+                                                                <li><input name="lvl3" type="radio">The outcome variable is <strong>interval</strong> <!-- explain interval -->
+                                                                    <ul>
+                                                                        <li class="answer">
+                                                                            <p>The test you need is <strong>Linear regression </strong></p>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li><input name="lvl3" type="radio">The outcome variable is <strong><u>not</u> interval </strong> <!-- explain nominal -->
+                                                                    <ul>
+                                                                        <li>How many levels does the outcome variable have?</li>
+                                                                        <li><input name="lvl4" type="radio">The outcome variable is <strong>binary</strong><!-- explain binary --> 
+                                                                            <ul>
+                                                                                <li class="answer">
+                                                                                    <p>The test you need is <strong>binary (binomial) logistic regression</strong></p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li><input name="lvl4" type="radio">The outcome variable has <strong>3 or more <u>ordinal</u> levels </strong>
+                                                                            <ul>
+                                                                                <li class="answer">
+                                                                                    <p>The test you need is <strong>ordinal logistic regression </strong></p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li><input name="lvl4" type="radio">The outcome variable has <strong>3 or more <u>nominal</u> levels </strong>
+                                                                            <ul>
+                                                                                <li class="answer">
+                                                                                    <p>The test you need is <strong>nominal logistic regression </strong></p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li><input name="lvl1" type="radio">I want to measure <strong>differences between/among groups</strong> 
+                                                    <ul>
+                                                        <li>How many groups are you comparing?</li>
+                                                        <li><input name="lvl2" type="radio">I am comparing <strong><u>one group</u> to a specified value </strong>
+                                                            <ul>
+                                                                <li>What is the level of measurement for the variable?</li>
+                                                                <li><input name="lvl3" type="radio">The variable is <strong>nominal</strong> <!-- explain nominal -->
+                                                                    <ul>
+                                                                        <li class="answer">
+                                                                            <p>The test you need is <strong>Binomial test </strong></p>
+                                                                            <p>or <strong>One-sample chi-square </strong></p>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li><input name="lvl3" type="radio">The variable is <strong>ordinal</strong> <!-- explain ordinal -->
+                                                                    <ul>
+                                                                        <li class="answer">
+                                                                            <p>The test you need is <strong>Runs test </strong></p>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li><input name="lvl3" type="radio">The variable is <strong>interval</strong> <!-- explain interval -->
+                                                                    <ul>
+                                                                        <li class="answer">
+                                                                            <p>The test you need is <strong>One-sample t-test </strong></p>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><input name="lvl2" type="radio">I want to measure <strong>differences <u>between</u> two groups</strong>  
+                                                            <ul>
+                                                                <li>Are the samples related/paired? </li>
+                                                                <li><input name="lvl3" type="radio"><strong>No, the samples are not paired nor has the measurement been repeated </strong>
+                                                                    <ul>
+                                                                        <li>What is the level of measurement of the variable? </li>
+                                                                        <li><input name="lvl4" type="radio">The variable is <strong>nominal </strong> <!-- explain nominal -->
+                                                                            <ul>
+                                                                                <li>What is the sample size of the data? </li>
+                                                                                <li><input name="lvl5" type="radio">The sample size is <strong> less than 20</strong> <!-- explain nominal -->
+                                                                                    <ul>
+                                                                                        <li class="answer">                                                              
+                                                                                            <p>The test you need is <strong>Fisher's exact</strong></p>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                                <li><input name="lvl5" type="radio">The sample size is  <strong> 20 or more</strong>
+                                                                                    <ul>
+                                                                                        <li class="answer">
+                                                                                            <p>The test you need is <strong>Chi-square</strong></p>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </li>                                                      
+                                                                            </ul>   
+                                                                        </li>
+                                                                        <li><input name="lvl4" type="radio">The variable is <strong>ordinal </strong> <!-- explain ordinal -->
+                                                                            <ul>
+                                                                                <li class="answer">
+                                                                                    <p>The test you need is <strong>Mann-Whitney U </strong></p>
+                                                                                    <p>or <strong>Wilcoxon <u>Rank Sum</u> </strong></p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li><input name="lvl4" type="radio">The variable is <strong>interval </strong> <!-- explain interval -->
+                                                                            <ul>
+                                                                                <li>Are the variables normally distributed? </li>
+                                                                                <li><input name="lvl4" type="radio"><strong>Yes, the variables meet criteria for parametric analysis </strong> <!-- explain parametric -->
+                                                                                    <ul>
+                                                                                        <li class="answer">
+                                                                                            <p>The test you need is <strong>Independent samples t-test</strong></p>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                                <li><input name="lvl4" type="radio"><strong> No, the variables do not meet criteria for parametric analysis </strong> <!-- explain nonparametric -->
+                                                                                    <ul>
+                                                                                        <li class="answer">
+                                                                                            <p>The test you need is <strong>Mann-Whitney U </strong></p>
+                                                                                            <p> or <strong>Wilcoxon <u>Rank Sum</u> </strong></p>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li><input name="lvl3" type="radio"><strong>Yes, the samples are paired (or the measurement has been repeated) </strong>
+                                                                    <ul>
+                                                                        <li>What is the level of measurement of the variable? </li>
+                                                                        <li><input name="lvl4" type="radio">The variable is <strong>nominal </strong> <!-- explain nominal -->
+                                                                            <ul>
+                                                                                <li class="answer">
+                                                                                    <p>The test you need is <strong>McNemar's Chi-square</strong></p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li><input name="lvl4" type="radio">The variable is <strong>ordinal </strong> <!-- explain ordinal -->
+                                                                            <ul>
+                                                                                <li class="answer">
+                                                                                    <p>The test you need is <strong>Wilcoxon <u>Signed Ranks</u> </strong></p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li><input name="lvl4" type="radio">The variable is <strong>interval </strong> <!-- explain interval -->
+                                                                            <ul>
+                                                                                <li>Are the variables normally distributed? </li>
+                                                                                <li><input name="lvl4" type="radio"><strong>Yes, the variables meet criteria for parametric analysis </strong> <!-- explain parametric -->
+                                                                                    <ul>
+                                                                                        <li class="answer">
+                                                                                            <p>PThe test you need is <strong>Paired samples t-test</strong></p>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                                <li><input name="lvl4" type="radio"><strong> No, the variables do not meet criteria for parametric analysis </strong> <!-- explain nonparametric -->
+                                                                                    <ul>
+                                                                                        <li class="answer">
+                                                                                            <p>The test you need is <strong>Mann-Whitney U </strong></p>
+                                                                                            <p>or <strong>Wilcoxon <u>Rank Sum</u> </strong></p>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><input name="lvl2" type="radio">I want to measure<strong> differences <u>among</u> three or more groups</strong>
+                                                            <ul>
+                                                                <li>Are the samples related/matched? </li>
+                                                                <li><input name="lvl3" type="radio"><strong>No, the samples are not matched nor has the measurement been repeated</strong>
+                                                                    <ul>
+                                                                        <li>What is the level of measurement of the variable? </li>
+                                                                        <li><input name="lvl4" type="radio">The variable is <strong>nominal </strong> <!-- explain nominal -->
+                                                                            <ul>
+                                                                                <li class="answer">
+                                                                                    <p>The test you need is <strong>Chi-square</strong></p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li><input name="lvl4" type="radio">The variable is <strong>ordinal </strong> <!-- explain ordinal -->
+                                                                            <ul>
+                                                                                <li class="answer">
+                                                                                    <p>The test you need is <strong>Kruskal-Wallis One-Way Analysis of Variance </strong></p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li><input name="lvl4" type="radio">The variable is <strong>interval </strong> <!-- explain interval -->
+                                                                            <ul>
+                                                                                <li>Are the variables normally distributed? </li>
+                                                                                <li><input name="lvl4" type="radio"><strong>Yes, the variables meet criteria for parametric analysis </strong> <!-- explain parametric -->
+                                                                                    <ul>
+                                                                                        <li class="answer">
+                                                                                            <p>The test you need is <strong>Independent samples t-test</strong></p>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                                <li><input name="lvl4" type="radio"><strong> No, the variables do not meet criteria for parametric analysis </strong> <!-- explain nonparametric -->
+                                                                                    <ul>
+                                                                                        <li class="answer">
+                                                                                            <p>The test you need is <strong>Analysis of Variance </strong></p>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li><input name="lvl3" type="radio"><strong>Yes, the samples are paired (or the measurement has been repeated)  </strong>
+                                                                    <ul>
+                                                                        <li>What is the level of measurement of the variable? </li>
+                                                                        <li><input name="lvl4" type="radio">The variable is <strong>nominal </strong> <!-- explain nominal -->
+                                                                            <ul>
+                                                                                <li class="answer">
+                                                                                    <p>The test you need is <strong>Cochran's Q </strong></p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li><input name="lvl4" type="radio">The variable is <strong>ordinal </strong> <!-- explain ordinal -->
+                                                                            <ul>
+                                                                                <li class="answer">
+                                                                                    <p>The test you need is <strong>Friedman's Test (Two-Way Analysis of Variance by Ranks) </strong></p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li><input name="lvl4" type="radio">The variable is <strong>interval </strong> <!-- explain interval -->
+                                                                            <ul>
+                                                                                <li>Are the variables normally distributed? </li>
+                                                                                <li><input name="lvl4" type="radio"><strong>Yes, the variables meet criteria for parametric analysis </strong> <!-- explain parametric -->
+                                                                                    <ul>
+                                                                                        <li class="answer">
+                                                                                            <p>The test you need is <strong>Repeated measures Analysis of Variance </strong></p>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                                <li><input name="lvl4" type="radio"><strong> No, the variables do not meet criteria for parametric analysis </strong> <!-- explain nonparametric -->
+                                                                                    <ul>
+                                                                                        <li class="answer">
+                                                                                            <p>The test you need is <strong>Friedman's Test (Two-Way Analysis of Variance by Ranks)</strong></p>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div> <button id="goBack" class="treeControls">Back</button> 
+                                        <button id="reset" class="treeControls">Reset</button>
+                                    </div>
+                                </div> 
+                                <link rel="stylesheet" href="decision-tree.css">
+                                <script type="text/javascript" src="jquery-1_002.js"></script>
+                                <script type="text/javascript" src="decision-tree.js"></script>
+                                <script src="jquery.js"></script>
+                                <p></p>
+                            </div>
+                    </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id="copyright" role="contentinfo">xxx <a href="mailto:">xxx</a>.<br><br> <a href="xxx">xxx</a><br>xxx<br> Copyright © 2021<br><br>
+                <div id="view-toggle">
+                    <p>Reference: Simpson SH. Creating a Data Analysis Plan: What to Consider When Choosing Statistics for a Study. <em>Can J Hosp Pharm</em>. 2015;68(4):311-317. doi:10.4212/cjhp.v68i4.1471</p>
+                    <p>Kim, Hae-Young. “Statistical notes for clinical researchers: Chi-squared test and Fisher's exact test.” Restorative dentistry & endodontics vol. 42,2 (2017): 152-155. doi:10.5395/rde.2017.42.2.152</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </div>
+    <script src="jquery-1.js"></script>
+    <script src="chevron.js" type="text/javascript"></script>
+    <script type="text/javascript"></script>
+    <script type="text/javascript" src="uw-theme-responsive.js"></script>
+    <script type="text/javascript" src="jquery-1_003.js"></script>
+</body>
+
+</html>
