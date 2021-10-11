@@ -6,7 +6,7 @@
   "name": "STATiS — Selection Tool for Appropriate Tests in Statistics",
   "orientation": "any",
   "scope": "/",
-  "short_name": "STATiS — Selection Tool for Appropriate Tests in Statistics",
+  "short_name": "STATiS",
   "start_url": "/",
   "theme_color": "#ffffff",
   "icons": [
