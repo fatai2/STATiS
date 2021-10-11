@@ -1,0 +1,31 @@
+{
+  "background_color": "#da532c",
+  "description": "This aid allows you choose an appropriate statistical test to perform your data analysis.",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "STATiS — Selection Tool for Appropriate Tests in Statistics",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "STATiS — Selection Tool for Appropriate Tests in Statistics",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/favicon-32x32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "/favicon-16x16.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180"
+    },
+    {
+      "src": "/safari-pinned-tab.svg"
+    }
+  ]
+}
