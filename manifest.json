@@ -25,6 +25,10 @@
       "sizes": "180x180"
     },
     {
+      "src": "/logo_trans.png",
+      "sizes": "512x512"
+    },
+    {
       "src": "/safari-pinned-tab.svg"
     }
   ]
